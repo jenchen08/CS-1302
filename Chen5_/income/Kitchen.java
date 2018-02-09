@@ -31,6 +31,7 @@ public class Kitchen {
 	public void addGuest(Guest g) {
 		guestlist.add(g);
 		updateStock(g);
+		
 	}
 
 	// getting stock from opening stock
@@ -52,15 +53,13 @@ public class Kitchen {
 	// checking stock and when it gets to 4 or below ... we stop.
 	public boolean checkStock() {
 
-		for (int g : stock) {
-
+		for (int i = 0; i < stock.length; i++) {
+			int g = stock[i];
 			if (g <= 4) {
-				return true;
-			} else {
 				return false;
 			}
 
 		}
-		return false;
+		return true;
 	}
 }

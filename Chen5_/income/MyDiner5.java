@@ -31,7 +31,7 @@ public class MyDiner5 {
 			k.addGuest(g1);
 		}
 
-		while (k.checkStock() != true);
+		while (k.checkStock() != false);
 		
 		// my output for income for the day, guests that came in, and closing stock 
 		System.out.printf("%s$%d%s\n\n","********** Total income for the day: ",((numFam*65)+(numCouple*30)+(numInd*12)+(numGp*72))," ********************");
